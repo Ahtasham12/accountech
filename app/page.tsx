@@ -4,6 +4,8 @@ import {
   ArrowRight, Plug, BrainCircuit, UserCheck, FileText,
   BookOpen, BarChart3, Receipt, CreditCard, ShoppingCart,
   Calculator, ShoppingBag, Building2, Fuel, Zap,
+  MessageSquare, Mail, RefreshCw, Bell, CalendarCheck,
+  TrendingUp, Landmark, ShieldCheck, FileSearch, Cpu,
 } from 'lucide-react'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import AnimatedTagline from '@/components/AnimatedTagline'
@@ -17,16 +19,17 @@ import TestimonialCarousel from '@/components/TestimonialCarousel'
 import CTABanner from '@/components/CTABanner'
 
 export const metadata: Metadata = {
-  title: 'AccounTech — AI-Powered Bookkeeping for US Small Businesses',
+  title: 'AccounTech — AI-Powered Accounting Operations for US Businesses',
   description:
-    'Your books closed in 5 days, not 21. AI categorizes 80% of transactions instantly. QBO-certified review. Starting at $349/month.',
+    'AI-powered accounting operations platform. Transactions auto-categorized, receipts captured via WhatsApp & Gmail, bank reconciliation automated — books closed in 5 days. QBO certified. From $349/mo.',
   openGraph: {
-    title: 'AccounTech — AI-Powered Bookkeeping',
-    description: 'Month-end close in 5 days. AI + human review. Starting at $349/month.',
+    title: 'AccounTech — AI-Powered Accounting Operations',
+    description: 'AI categorizes transactions, reads receipts, reconciles banks — books closed in 5 days. From $349/mo.',
     url: 'https://accountech.com',
   },
 }
 
+// ─── Services ─────────────────────────────────────────────────────────────────
 const services = [
   {
     title: 'Monthly Bookkeeping',
@@ -46,10 +49,10 @@ const services = [
   },
   {
     title: 'Receipt Management',
-    description: 'AI-powered OCR reads and categorizes receipts instantly. Email or photo — we handle the rest.',
+    description: 'AI-powered OCR reads and categorizes receipts instantly. WhatsApp, email, or photo — we handle the rest.',
     icon: <Receipt className="w-6 h-6" />,
     accentColor: '#8B5CF6',
-    features: ['AI OCR extraction', 'Auto-categorization', 'Digital storage', 'Email/photo upload'],
+    features: ['AI OCR extraction', 'WhatsApp & Gmail capture', 'Auto-categorization', 'Digital storage'],
     href: '/services#receipts',
   },
   {
@@ -78,6 +81,7 @@ const services = [
   },
 ]
 
+// ─── Industries ───────────────────────────────────────────────────────────────
 const industries = [
   {
     title: 'E-commerce & Amazon Sellers',
@@ -105,13 +109,145 @@ const industries = [
   },
 ]
 
+// ─── How It Works steps ───────────────────────────────────────────────────────
 const steps = [
-  { step: '01', title: 'Connect Your Data', icon: <Plug className="w-5 h-5" />, description: 'We connect to QuickBooks, Xero, or bank feeds. Receipts come in via email or photo — zero friction.', color: '#4F8CFF' },
-  { step: '02', title: 'AI Categorizes', icon: <BrainCircuit className="w-5 h-5" />, description: 'Our AI engine categorizes 80% of transactions instantly with 99%+ confidence. Unusual items get flagged.', color: '#00D4FF' },
-  { step: '03', title: 'Expert Reviews', icon: <UserCheck className="w-5 h-5" />, description: 'A QBO-certified accountant reviews every flagged item. Nothing posts without human verification.', color: '#8B5CF6' },
-  { step: '04', title: 'Reports Delivered', icon: <FileText className="w-5 h-5" />, description: 'Clean P&L, balance sheet, and plain-English summary emailed by the 5th of every month.', color: '#10B981' },
+  {
+    step: '01',
+    title: 'Connect Your Systems',
+    icon: <Plug className="w-5 h-5" />,
+    description:
+      'Link QuickBooks or Xero, connect bank feeds, and forward invoices from Gmail. WhatsApp receipts, Stripe, Shopify, and PayPal sync automatically — zero manual data entry.',
+    tags: ['QuickBooks', 'Gmail', 'WhatsApp', 'Stripe', 'Shopify'],
+    color: '#4F8CFF',
+  },
+  {
+    step: '02',
+    title: 'AI Processes Everything',
+    icon: <BrainCircuit className="w-5 h-5" />,
+    description:
+      'Our AI engine categorizes 80%+ of transactions in seconds, reads receipts via OCR, performs 3-way bank reconciliation, detects anomalies, and automatically chases missing documents.',
+    tags: ['Auto-categorize', 'OCR receipts', 'Bank matching', 'Anomaly alerts'],
+    color: '#00D4FF',
+  },
+  {
+    step: '03',
+    title: 'Human Review & Approval',
+    icon: <UserCheck className="w-5 h-5" />,
+    description:
+      'A QBO-certified accountant reviews every AI decision, approves flagged transactions, and verifies accuracy end-to-end. Nothing posts to your books without explicit human sign-off.',
+    tags: ['QBO Certified', 'Human verified', 'Zero errors'],
+    color: '#8B5CF6',
+  },
+  {
+    step: '04',
+    title: 'Reports & Clean Close',
+    icon: <FileText className="w-5 h-5" />,
+    description:
+      'Receive P&L, balance sheet, and cash flow statement by the 5th of every month. Tax-ready, audit-proof, with a plain-English summary that tells you exactly where your money went.',
+    tags: ['P&L', 'Balance sheet', 'Cash flow', 'Month-end in 5 days'],
+    color: '#10B981',
+  },
 ]
 
+// ─── AI Automation Features ───────────────────────────────────────────────────
+const aiFeatures = [
+  {
+    icon: <Cpu className="w-5 h-5" />,
+    title: 'Transaction Categorization',
+    description:
+      'AI categorizes 80%+ of transactions instantly with 99%+ accuracy — trained on millions of real bookkeeping entries.',
+    color: '#4F8CFF',
+  },
+  {
+    icon: <MessageSquare className="w-5 h-5" />,
+    title: 'WhatsApp Receipt Capture',
+    description:
+      'Snap and send receipt photos to our WhatsApp number. AI reads, extracts, and logs the expense automatically.',
+    color: '#25D366',
+  },
+  {
+    icon: <Mail className="w-5 h-5" />,
+    title: 'Gmail Invoice Scanning',
+    description:
+      'Forward invoices from Gmail and our AI extracts vendor, amount, date, and category — no manual entry ever.',
+    color: '#EA4335',
+  },
+  {
+    icon: <RefreshCw className="w-5 h-5" />,
+    title: 'Bank Statement Matching',
+    description:
+      'Automated 3-way reconciliation across all bank accounts. Every statement matched, every discrepancy flagged.',
+    color: '#8B5CF6',
+  },
+  {
+    icon: <Bell className="w-5 h-5" />,
+    title: 'Missing Document Chase',
+    description:
+      'AI identifies missing receipts and sends automated reminders to your team — nothing falls through the cracks.',
+    color: '#F59E0B',
+  },
+  {
+    icon: <CalendarCheck className="w-5 h-5" />,
+    title: 'Month-End Assist',
+    description:
+      'AI pre-fills guided month-end checklists. Your accountant reviews and approves the final package.',
+    color: '#10B981',
+  },
+  {
+    icon: <TrendingUp className="w-5 h-5" />,
+    title: 'Weekly Financial Reports',
+    description:
+      'Automated P&L snapshots delivered every Friday — know your revenue, expenses, and margins before the week ends.',
+    color: '#EC4899',
+  },
+  {
+    icon: <Landmark className="w-5 h-5" />,
+    title: 'Multi-Bank Support',
+    description:
+      'Connect unlimited bank accounts, credit cards, and payment processors. One unified view of all your finances.',
+    color: '#00D4FF',
+  },
+  {
+    icon: <ShieldCheck className="w-5 h-5" />,
+    title: 'Human-Verified Accuracy',
+    description:
+      'Every AI decision is reviewed and approved by a QBO-certified accountant. Enterprise accuracy at AI speed.',
+    color: '#4F8CFF',
+  },
+  {
+    icon: <FileSearch className="w-5 h-5" />,
+    title: 'Full Audit Trail',
+    description:
+      'Complete transaction history with source documents, categorization rationale, and reviewer sign-off. Always audit-ready.',
+    color: '#8B5CF6',
+  },
+]
+
+// ─── AI vs Traditional Comparison ─────────────────────────────────────────────
+const comparisons = [
+  { metric: 'Month-end close', traditional: '21–30+ days', accountech: '5 business days' },
+  { metric: 'Transaction categorization', traditional: 'Manual, takes days', accountech: 'AI in seconds' },
+  { metric: 'Receipt capture', traditional: 'Manual scan & filing', accountech: 'WhatsApp + Gmail AI' },
+  { metric: 'Monthly cost', traditional: '$2,000–$5,000+', accountech: 'From $349/month' },
+  { metric: 'Availability', traditional: 'Business hours only', accountech: '24/7 AI capture' },
+  { metric: 'Accuracy', traditional: 'Human error risk', accountech: '99%+ AI accuracy' },
+  { metric: 'Scalability', traditional: 'Limited capacity', accountech: 'Unlimited transactions' },
+  { metric: 'Human oversight', traditional: 'Varies by firm', accountech: 'Every entry — QBO certified' },
+]
+
+// ─── Integrations ─────────────────────────────────────────────────────────────
+const integrations = [
+  { name: 'QuickBooks', color: '#2CA01C', category: 'Accounting' },
+  { name: 'Gmail', color: '#EA4335', category: 'Email' },
+  { name: 'WhatsApp', color: '#25D366', category: 'Messaging' },
+  { name: 'Stripe', color: '#635BFF', category: 'Payments' },
+  { name: 'Shopify', color: '#96BF48', category: 'E-commerce' },
+  { name: 'PayPal', color: '#003DB3', category: 'Payments' },
+  { name: 'CSV Import', color: '#4F8CFF', category: 'Data' },
+  { name: 'Bank Feeds', color: '#10B981', category: 'Banking' },
+]
+
+// ─── Page ─────────────────────────────────────────────────────────────────────
 export default function HomePage() {
   return (
     <>
@@ -132,7 +268,7 @@ export default function HomePage() {
             <AnimateOnScroll variant="fade-up" delay={0.04}>
               <div className="badge mb-6">
                 <Zap className="w-3 h-3" aria-hidden="true" />
-                AI-Powered · QBO Certified · Florida LLC
+                AI Operations · QBO Certified · Florida LLC
               </div>
             </AnimateOnScroll>
 
@@ -141,16 +277,18 @@ export default function HomePage() {
                 id="hero-headline"
                 className="text-hero-sm sm:text-hero-md lg:text-hero leading-[1.05] font-bold mb-6"
               >
-                Your books closed in{' '}
-                <span className="text-gradient">5 days</span>
-                ,{' '}not 21.
+                AI accounting operations —{' '}
+                <span className="text-gradient">books closed in 5 days</span>.
               </h1>
             </AnimateOnScroll>
 
             <AnimateOnScroll variant="fade-up" delay={0.16}>
               <p className="text-lg sm:text-xl text-white/60 leading-relaxed mb-10 max-w-2xl mx-auto">
-                AI-powered bookkeeping for US small businesses.{' '}
-                <span className="text-white font-medium">80% of transactions categorized instantly</span> — then verified by a QBO-certified accountant. Enterprise accuracy at small business pricing.
+                We connect to your bank, Gmail, WhatsApp, Stripe, and Shopify.{' '}
+                <span className="text-white font-medium">
+                  AI categorizes transactions, reads receipts, and reconciles bank statements automatically
+                </span>{' '}
+                — then a QBO-certified accountant verifies every entry before your books close.
               </p>
             </AnimateOnScroll>
 
@@ -199,7 +337,7 @@ export default function HomePage() {
                 From raw data to clean books in 4 steps
               </h2>
               <p className="section-sub max-w-2xl mx-auto">
-                A process engineered for AI speed and human accuracy — every single month, without fail.
+                A complete AI accounting operations pipeline — engineered for speed, built on human accuracy.
               </p>
             </AnimateOnScroll>
           </div>
@@ -227,9 +365,22 @@ export default function HomePage() {
                     {step.icon}
                   </div>
                   <h3 className="font-bold text-white text-base mb-2">{step.title}</h3>
-                  <p className="text-sm text-white/50 leading-relaxed">{step.description}</p>
+                  <p className="text-sm text-white/50 leading-relaxed mb-4">{step.description}</p>
 
-                  {/* Connector (desktop) */}
+                  {/* Integration / capability tags */}
+                  <div className="flex flex-wrap gap-1.5">
+                    {step.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs px-2 py-0.5 rounded-full"
+                        style={{ background: `${step.color}14`, color: `${step.color}CC` }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Connector arrow (desktop) */}
                   {i < steps.length - 1 && (
                     <div
                       className="hidden lg:block absolute top-12 -right-3 w-6 h-px"
@@ -241,6 +392,95 @@ export default function HomePage() {
               </AnimateOnScroll>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── AI Automation Features ──────────────────────────────── */}
+      <section className="bg-navy section-pad" aria-labelledby="ai-features-heading">
+        <div className="container-xl">
+          <div className="text-center mb-16">
+            <AnimateOnScroll variant="fade-up">
+              <div className="badge mb-4">AI Automation</div>
+              <h2 id="ai-features-heading" className="section-heading mb-4">
+                10 AI automations running every month
+              </h2>
+              <p className="section-sub max-w-2xl mx-auto">
+                Not just categorization — a full AI accounting engine handling the complete workflow,
+                from receipt capture to monthly close.
+              </p>
+            </AnimateOnScroll>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {aiFeatures.map((feature, i) => (
+              <AnimateOnScroll key={feature.title} variant="fade-up" delay={i * 0.04}>
+                <div className="glass-card rounded-2xl p-5 h-full transition-all duration-300 group hover:border-white/10">
+                  <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-110"
+                    style={{ background: `${feature.color}18`, color: feature.color }}
+                    aria-hidden="true"
+                  >
+                    {feature.icon}
+                  </div>
+                  <h3 className="font-semibold text-white text-sm mb-2 leading-snug">{feature.title}</h3>
+                  <p className="text-xs text-white/45 leading-relaxed">{feature.description}</p>
+                </div>
+              </AnimateOnScroll>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── AI vs Traditional Comparison ────────────────────────── */}
+      <section className="bg-navy-800 section-pad" aria-labelledby="comparison-heading">
+        <div className="container-xl max-w-4xl">
+          <div className="text-center mb-16">
+            <AnimateOnScroll variant="fade-up">
+              <div className="badge mb-4">AI vs Traditional</div>
+              <h2 id="comparison-heading" className="section-heading mb-4">
+                Why modern businesses are switching to AI accounting
+              </h2>
+              <p className="section-sub max-w-2xl mx-auto">
+                The same quality accounting delivered 4× faster at a fraction of the cost — with
+                human verification at every step.
+              </p>
+            </AnimateOnScroll>
+          </div>
+
+          <AnimateOnScroll variant="fade-up" delay={0.1}>
+            <div className="glass-card rounded-2xl overflow-hidden">
+              {/* Header row */}
+              <div className="grid grid-cols-3 border-b border-white/[0.08]">
+                <div className="p-4 sm:p-5" />
+                <div className="p-4 sm:p-5 text-center border-l border-white/[0.08]">
+                  <p className="text-[10px] font-medium text-white/30 uppercase tracking-widest mb-1">Traditional</p>
+                  <p className="text-sm font-semibold text-white/50">Accountant</p>
+                </div>
+                <div className="p-4 sm:p-5 text-center border-l border-white/[0.08] bg-accent/[0.06]">
+                  <p className="text-[10px] font-medium text-accent/60 uppercase tracking-widest mb-1">AccounTech</p>
+                  <p className="text-sm font-semibold text-accent">AI + Human</p>
+                </div>
+              </div>
+
+              {/* Data rows */}
+              {comparisons.map((row, i) => (
+                <div
+                  key={row.metric}
+                  className={`grid grid-cols-3 border-b border-white/[0.05] last:border-0${i % 2 !== 0 ? ' bg-white/[0.015]' : ''}`}
+                >
+                  <div className="p-4 sm:p-5 text-sm text-white/60 font-medium flex items-center">
+                    {row.metric}
+                  </div>
+                  <div className="p-4 sm:p-5 text-center border-l border-white/[0.05] text-sm text-white/35 flex items-center justify-center">
+                    {row.traditional}
+                  </div>
+                  <div className="p-4 sm:p-5 text-center border-l border-white/[0.05] bg-accent/[0.04] text-sm font-semibold text-[#10B981] flex items-center justify-center">
+                    {row.accountech}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </AnimateOnScroll>
         </div>
       </section>
 
@@ -277,8 +517,54 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Integrations ─────────────────────────────────────────── */}
+      <section className="bg-navy-800 section-pad" aria-labelledby="integrations-heading">
+        <div className="container-xl max-w-3xl text-center">
+          <div className="mb-16">
+            <AnimateOnScroll variant="fade-up">
+              <div className="badge mb-4">Integrations</div>
+              <h2 id="integrations-heading" className="section-heading mb-4">
+                Connects to your entire financial stack
+              </h2>
+              <p className="section-sub max-w-xl mx-auto">
+                AccounTech plugs into the tools you already use — no migration, no disruption,
+                no manual data entry.
+              </p>
+            </AnimateOnScroll>
+          </div>
+
+          <AnimateOnScroll variant="fade-up" delay={0.1}>
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              {integrations.map((item) => (
+                <div
+                  key={item.name}
+                  className="glass-card px-5 py-3 rounded-xl flex items-center gap-2.5 hover:border-white/15 transition-all duration-200 cursor-default"
+                >
+                  <div
+                    className="w-2 h-2 rounded-full flex-shrink-0"
+                    style={{ background: item.color }}
+                    aria-hidden="true"
+                  />
+                  <span className="text-sm font-medium text-white/75">{item.name}</span>
+                  <span className="text-xs text-white/25 hidden sm:inline">· {item.category}</span>
+                </div>
+              ))}
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-up" delay={0.2}>
+            <p className="text-sm text-white/30">
+              Don&apos;t see your tool?{' '}
+              <Link href="/contact" className="text-accent/60 hover:text-accent transition-colors">
+                Request an integration →
+              </Link>
+            </p>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* ── Industries ────────────────────────────────────────── */}
-      <section className="bg-navy-800 section-pad" aria-labelledby="industries-heading">
+      <section className="bg-navy section-pad" aria-labelledby="industries-heading">
         <div className="container-xl">
           <div className="text-center mb-16">
             <AnimateOnScroll variant="fade-up">
@@ -311,7 +597,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Testimonials ─────────────────────────────────────── */}
-      <section className="bg-navy section-pad" aria-labelledby="testimonials-heading">
+      <section className="bg-navy-800 section-pad" aria-labelledby="testimonials-heading">
         <div className="container-xl max-w-4xl">
           <div className="text-center mb-12">
             <AnimateOnScroll variant="fade-up">
@@ -328,7 +614,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CPA Partner Dark Section ─────────────────────────── */}
-      <section className="bg-navy-800 section-pad relative overflow-hidden" aria-labelledby="cpa-heading">
+      <section className="bg-navy section-pad relative overflow-hidden" aria-labelledby="cpa-heading">
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl" />
@@ -362,7 +648,7 @@ export default function HomePage() {
       {/* ── Final CTA ────────────────────────────────────────── */}
       <CTABanner
         headline="Ready to close your books in 5 days?"
-        subtext="Schedule a free 30-minute consultation. No commitment. We'll review your current setup and show you exactly what AccounTech delivers."
+        subtext="Schedule a free 30-minute consultation. No commitment. We'll review your current setup and show you exactly what AccounTech's AI operations platform delivers."
         primaryCTA="Schedule Free Consultation"
         primaryHref="/contact"
         secondaryCTA="View Pricing"
