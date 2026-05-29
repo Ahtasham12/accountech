@@ -3,18 +3,17 @@
 import { motion, useReducedMotion } from 'framer-motion'
 
 // ─── Data ─────────────────────────────────────────────────────────
-const WORDS = ['We', 'are', 'Your', 'book', 'Keepers']
+const WORDS = ['We', 'are', 'your', 'AI', 'assisted', 'Book', 'Keepers!']
 
-// "Keepers" gets the accent highlight
-const ACCENT = 'Keepers'
+// Words that get the blue accent highlight
+const ACCENTS = new Set(['AI', 'Keepers!'])
 
-// Total stagger duration before float begins
-const STAGGER       = 0.06
-const DELAY_FIRST   = 0.1
-const FLOAT_DELAY   = DELAY_FIRST + WORDS.length * STAGGER + 0.6
+// Timing
+const STAGGER     = 0.06
+const DELAY_FIRST = 0.1
+const FLOAT_DELAY = DELAY_FIRST + WORDS.length * STAGGER + 0.6
 
 // ─── Variants ─────────────────────────────────────────────────────
-// Container staggers children
 const container = {
   hidden: {},
   show: {
@@ -25,7 +24,7 @@ const container = {
   },
 }
 
-// Each word slides in from the RIGHT (x: 40 → 0) with spring physics
+// Each word slides in from the right with spring physics
 const wordVariant = {
   hidden: { opacity: 0, x: 40 },
   show: {
@@ -45,16 +44,16 @@ export default function AnimatedTagline() {
 
   if (reduced) {
     return (
-      <p className="text-xs sm:text-sm font-medium text-white/40 mb-4 tracking-wide">
-        We are Your book Keepers
+      <p className="text-base sm:text-lg font-medium text-white/50 mb-3 tracking-wide">
+        We are your AI assisted Book Keepers!
       </p>
     )
   }
 
   return (
-    <div className="relative mb-4 inline-block">
+    <div className="relative mb-3 inline-block">
 
-      {/* Float wrapper — starts after slide-in completes, loops forever */}
+      {/* Float wrapper — loops forever after slide-in */}
       <motion.div
         animate={{ y: [0, -6, 0] }}
         transition={{
@@ -64,14 +63,14 @@ export default function AnimatedTagline() {
           ease:     'easeInOut',
         }}
       >
-        {/* Word row — each word slides in from right with stagger */}
+        {/* Word row — slides in from right with stagger */}
         <motion.p
-          className="text-xs sm:text-sm font-medium text-white/40 tracking-wide
-                     flex flex-wrap gap-x-[0.28em] justify-center items-baseline"
+          className="text-base sm:text-lg font-medium text-white/50 tracking-wide
+                     flex flex-wrap gap-x-[0.3em] justify-center items-baseline"
           variants={container}
           initial="hidden"
           animate="show"
-          aria-label="We are Your book Keepers"
+          aria-label="We are your AI assisted Book Keepers!"
         >
           {WORDS.map((w, i) => (
             <motion.span
@@ -79,8 +78,8 @@ export default function AnimatedTagline() {
               variants={wordVariant}
               style={{ display: 'inline-block' }}
               className={
-                w === ACCENT
-                  ? 'font-semibold text-[#4F8CFF]/80'
+                ACCENTS.has(w)
+                  ? 'font-semibold text-[#4F8CFF]/90'
                   : ''
               }
             >
@@ -90,7 +89,7 @@ export default function AnimatedTagline() {
         </motion.p>
       </motion.div>
 
-      {/* Accent underline — scaleX from left, appears after last word */}
+      {/* Accent underline — scaleX from left */}
       <motion.span
         initial={{ scaleX: 0, opacity: 0 }}
         animate={{ scaleX: 1, opacity: 1 }}
@@ -102,7 +101,7 @@ export default function AnimatedTagline() {
         aria-hidden="true"
         style={{ transformOrigin: 'left' }}
         className="block h-px w-full bg-gradient-to-r from-[#4F8CFF]/60 via-[#4F8CFF]/30 to-transparent
-                   rounded-full mt-1"
+                   rounded-full mt-1.5"
       />
     </div>
   )

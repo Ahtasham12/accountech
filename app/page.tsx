@@ -253,7 +253,7 @@ export default function HomePage() {
     <>
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section
-        className="relative overflow-hidden aurora-bg pt-24 pb-0 sm:pt-32"
+        className="relative overflow-hidden aurora-bg pt-20 pb-0 sm:pt-28"
         aria-labelledby="hero-headline"
       >
         {/* Animated background orbs */}
