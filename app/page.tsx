@@ -270,8 +270,8 @@ export default function HomePage() {
                 id="hero-headline"
                 className="text-hero-sm sm:text-hero-md lg:text-hero leading-[1.05] font-bold mb-6"
               >
-                AI accounting operations —{' '}
-                <span className="text-gradient">books closed in 5 days</span>.
+                We do your bookkeeping faster using AI.{' '}
+                <span className="text-gradient">Your Books Closure are not Delayed Anymore!</span>
               </h1>
             </AnimateOnScroll>
 
