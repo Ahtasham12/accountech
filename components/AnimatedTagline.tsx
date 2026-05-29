@@ -3,122 +3,102 @@
 import { motion, useReducedMotion } from 'framer-motion'
 
 // ─── Data ─────────────────────────────────────────────────────────
-const WORDS = ['Let', 'us', 'automate', 'your', 'bookkeeping', 'workflow']
+const WORDS = ['We', 'are', 'Your', 'book', 'Keepers']
 
-// "automate" gets the accent highlight — reinforces the product's core promise
-const ACCENT = 'automate'
+// "Keepers" gets the accent highlight
+const ACCENT = 'Keepers'
+
+// Total stagger duration before float begins
+const STAGGER       = 0.06
+const DELAY_FIRST   = 0.1
+const FLOAT_DELAY   = DELAY_FIRST + WORDS.length * STAGGER + 0.6
 
 // ─── Variants ─────────────────────────────────────────────────────
-// Container staggers children by 55 ms (within UX Pro Max 30–50 ms guideline)
+// Container staggers children
 const container = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.055,
-      delayChildren:   0.08,
+      staggerChildren: STAGGER,
+      delayChildren:   DELAY_FIRST,
     },
   },
 }
 
-// Each word: spring physics (stiffness 300 / damping 24 = snappy, natural)
-// Only opacity + translateY → GPU-composited, zero layout reflow
+// Each word slides in from the RIGHT (x: 40 → 0) with spring physics
 const wordVariant = {
-  hidden: { opacity: 0, y: 12 },
+  hidden: { opacity: 0, x: 40 },
   show: {
     opacity: 1,
-    y: 0,
+    x: 0,
     transition: {
       type:      'spring' as const,
-      stiffness: 300,
-      damping:   24,
-    },
-  },
-}
-
-// Accent underline: scaleX 0→1 from left origin
-// Uses transform only — no width animation (UX Pro Max: transform-performance)
-const underlineVariant = {
-  hidden: { scaleX: 0, opacity: 0 },
-  show: {
-    scaleX:  1,
-    opacity: 1,
-    transition: {
-      delay:    WORDS.length * 0.055 + 0.15,   // starts after last word lands
-      duration: 0.45,
-      ease:     [0.22, 1, 0.36, 1] as [number, number, number, number],
-    },
-  },
-}
-
-// Blinking cursor: appears as last word lands, fades after ~1.4 s
-const cursorVariant = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: [0, 1, 1, 1, 0],
-    transition: {
-      delay:    WORDS.length * 0.055 - 0.05,
-      duration: 1.4,
-      times:    [0, 0.05, 0.5, 0.85, 1],
-      ease:     'linear',
+      stiffness: 280,
+      damping:   22,
     },
   },
 }
 
 // ─── Component ────────────────────────────────────────────────────
 export default function AnimatedTagline() {
-  // Respects prefers-reduced-motion (UX Pro Max: reduced-motion)
   const reduced = useReducedMotion()
 
   if (reduced) {
     return (
-      <p className="text-sm sm:text-base font-medium text-white/40 mb-4 tracking-wide">
-        Let us automate your bookkeeping workflow
+      <p className="text-xs sm:text-sm font-medium text-white/40 mb-4 tracking-wide">
+        We are Your book Keepers
       </p>
     )
   }
 
   return (
     <div className="relative mb-4 inline-block">
-      {/* Word row */}
-      <motion.p
-        className="text-sm sm:text-base font-medium text-white/40 tracking-wide
-                   flex flex-wrap gap-x-[0.28em] justify-center items-baseline"
-        variants={container}
-        initial="hidden"
-        animate="show"
-        aria-label="Let us automate your bookkeeping workflow"
+
+      {/* Float wrapper — starts after slide-in completes, loops forever */}
+      <motion.div
+        animate={{ y: [0, -6, 0] }}
+        transition={{
+          delay:    FLOAT_DELAY,
+          duration: 3,
+          repeat:   Infinity,
+          ease:     'easeInOut',
+        }}
       >
-        {WORDS.map((w, i) => (
-          <motion.span
-            key={i}
-            variants={wordVariant}
-            style={{ display: 'inline-block' }}
-            className={
-              w === ACCENT
-                ? 'font-semibold text-[#4F8CFF]/75'
-                : ''
-            }
-          >
-            {w}
-          </motion.span>
-        ))}
-
-        {/* Blinking cursor — appears alongside last word, then fades */}
-        <motion.span
-          variants={cursorVariant}
-          aria-hidden="true"
-          style={{ display: 'inline-block' }}
-          className="font-light text-[#4F8CFF]/70 ml-0.5 select-none"
+        {/* Word row — each word slides in from right with stagger */}
+        <motion.p
+          className="text-xs sm:text-sm font-medium text-white/40 tracking-wide
+                     flex flex-wrap gap-x-[0.28em] justify-center items-baseline"
+          variants={container}
+          initial="hidden"
+          animate="show"
+          aria-label="We are Your book Keepers"
         >
-          |
-        </motion.span>
-      </motion.p>
+          {WORDS.map((w, i) => (
+            <motion.span
+              key={i}
+              variants={wordVariant}
+              style={{ display: 'inline-block' }}
+              className={
+                w === ACCENT
+                  ? 'font-semibold text-[#4F8CFF]/80'
+                  : ''
+              }
+            >
+              {w}
+            </motion.span>
+          ))}
+        </motion.p>
+      </motion.div>
 
-      {/* Accent underline — scaleX from left, GPU-composited */}
+      {/* Accent underline — scaleX from left, appears after last word */}
       <motion.span
-        variants={underlineVariant}
-        initial="hidden"
-        animate="show"
+        initial={{ scaleX: 0, opacity: 0 }}
+        animate={{ scaleX: 1, opacity: 1 }}
+        transition={{
+          delay:    DELAY_FIRST + WORDS.length * STAGGER + 0.1,
+          duration: 0.45,
+          ease:     [0.22, 1, 0.36, 1] as [number, number, number, number],
+        }}
         aria-hidden="true"
         style={{ transformOrigin: 'left' }}
         className="block h-px w-full bg-gradient-to-r from-[#4F8CFF]/60 via-[#4F8CFF]/30 to-transparent

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {
   ArrowRight, Plug, BrainCircuit, UserCheck, FileText,
   BookOpen, BarChart3, Receipt, CreditCard, ShoppingCart,
-  Calculator, ShoppingBag, Building2, Fuel, Zap,
+  Calculator, ShoppingBag, Building2, Fuel,
   MessageSquare, Mail, RefreshCw, Bell, CalendarCheck,
   TrendingUp, Landmark, ShieldCheck, FileSearch, Cpu,
 } from 'lucide-react'
@@ -264,13 +264,6 @@ export default function HomePage() {
 
             {/* Animated tagline */}
             <AnimatedTagline />
-
-            <AnimateOnScroll variant="fade-up" delay={0.04}>
-              <div className="badge mb-6">
-                <Zap className="w-3 h-3" aria-hidden="true" />
-                AI Operations · QBO Certified · Florida LLC
-              </div>
-            </AnimateOnScroll>
 
             <AnimateOnScroll variant="fade-up" delay={0.1}>
               <h1
