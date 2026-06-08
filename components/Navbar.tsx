@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Zap, ArrowRight } from 'lucide-react'
+import { Menu, X, ArrowRight } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = [
@@ -31,14 +32,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
 
         {/* ── Logo ─────────────────────────────────────────── */}
-        <Link href="/" className="flex items-center gap-2 flex-shrink-0" aria-label="Accounting Skip home">
-          <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#4F6EF7]">
-            <Zap className="w-4 h-4 text-white" aria-hidden="true" />
-          </div>
-          <span className="text-xl font-bold">
-            <span className="text-white">Accounting</span>
-            <span className="text-[#4F6EF7]"> Skip</span>
-          </span>
+        <Link href="/" className="flex items-center flex-shrink-0" aria-label="Accounting Skip home">
+          <Image
+            src="/logo.jpg"
+            alt="Accounting Skip"
+            width={160}
+            height={64}
+            className="h-11 w-auto object-contain rounded-md"
+            priority
+          />
         </Link>
 
         {/* ── Desktop nav links ────────────────────────────── */}

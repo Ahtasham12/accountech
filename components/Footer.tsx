@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { Zap, Mail, Phone, MapPin, Twitter, Linkedin, Github, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
+import { Mail, Phone, MapPin, Twitter, Linkedin, Github, ArrowRight } from 'lucide-react'
 
 const footerLinks = {
   Services: [
@@ -42,13 +43,14 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 mb-5" aria-label="Accounting Skip Home">
-              <div className="flex items-center justify-center w-8 h-8 bg-accent rounded-lg shadow-glow-blue-sm">
-                <Zap className="w-4 h-4 text-white" aria-hidden="true" />
-              </div>
-              <span className="font-bold text-xl text-white">
-                Accoun<span className="text-gradient-blue">Tech</span>
-              </span>
+            <Link href="/" className="flex items-center mb-5" aria-label="Accounting Skip Home">
+              <Image
+                src="/logo.jpg"
+                alt="Accounting Skip"
+                width={150}
+                height={60}
+                className="h-14 w-auto object-contain rounded-md"
+              />
             </Link>
 
             <p className="text-white/50 text-sm leading-relaxed max-w-xs mb-6">
