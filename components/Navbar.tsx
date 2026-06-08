@@ -32,15 +32,19 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
 
         {/* ── Logo ─────────────────────────────────────────── */}
-        <Link href="/" className="flex items-center flex-shrink-0" aria-label="Accounting Skip home">
+        <Link href="/" className="flex items-center gap-2.5 flex-shrink-0" aria-label="Accounting Skip home">
           <Image
             src="/logo.jpg"
-            alt="Accounting Skip"
-            width={160}
-            height={64}
-            className="h-11 w-auto object-contain rounded-md"
+            alt="Accounting Skip logo"
+            width={36}
+            height={36}
+            className="h-9 w-9 object-contain rounded-md flex-shrink-0"
             priority
           />
+          <span className="text-xl font-bold">
+            <span className="text-white">Accounting</span>
+            <span className="text-[#4F6EF7]"> Skip</span>
+          </span>
         </Link>
 
         {/* ── Desktop nav links ────────────────────────────── */}
