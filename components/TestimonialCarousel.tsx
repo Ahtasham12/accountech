@@ -16,7 +16,7 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "AccounTech transformed how we handle our books. Their AI catches things our old bookkeeper missed, and we get our monthly reports a week faster than before. The best part? We actually understand the financial summaries they send us.",
+    quote: "Accounting Skip transformed how we handle our books. Their AI catches things our old bookkeeper missed, and we get our monthly reports a week faster than before. The best part? We actually understand the financial summaries they send us.",
     author: "LogCabinRustics",
     company: "E-commerce · Amazon & Shopify Seller",
     role: "Founder",
@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     accent: "#4F8CFF",
   },
   {
-    quote: "We were spending 3 days a month chasing receipts and reconciling Amazon settlements. AccounTech cut that to zero. Their FBA reconciliation is incredibly detailed — we now know exactly where every dollar goes.",
+    quote: "We were spending 3 days a month chasing receipts and reconciling Amazon settlements. Accounting Skip cut that to zero. Their FBA reconciliation is incredibly detailed — we now know exactly where every dollar goes.",
     author: "Michael Chen",
     company: "Multi-channel Amazon Seller",
     role: "Owner",
@@ -34,7 +34,7 @@ const testimonials: Testimonial[] = [
     accent: "#10B981",
   },
   {
-    quote: "As a CPA firm, we needed a reliable bookkeeping partner for our small business clients. AccounTech's white-label service is flawless. Our clients get better books, faster, and we can focus on high-value advisory work.",
+    quote: "As a CPA firm, we needed a reliable bookkeeping partner for our small business clients. Accounting Skip's white-label service is flawless. Our clients get better books, faster, and we can focus on high-value advisory work.",
     author: "Sarah Rodriguez, CPA",
     company: "SR Advisory Group",
     role: "Managing Partner",

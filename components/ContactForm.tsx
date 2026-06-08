@@ -66,7 +66,7 @@ export default function ContactForm() {
         <CheckCircle className="w-8 h-8 text-emerald" />
       </motion.div>
       <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
-      <p className="text-white/50 max-w-xs mb-6">We'll get back to you within 1 business day. Look out for an email from team@accountech.com.</p>
+      <p className="text-white/50 max-w-xs mb-6">We'll get back to you within 1 business day. Look out for an email from team@accountingskip.com.</p>
       <button
         onClick={() => { setForm({ name:'',email:'',company:'',phone:'',service:'',message:'' }); setStatus('idle') }}
         className="btn-ghost text-sm"

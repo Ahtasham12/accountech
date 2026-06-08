@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 mb-5" aria-label="AccounTech Home">
+            <Link href="/" className="flex items-center gap-2.5 mb-5" aria-label="Accounting Skip Home">
               <div className="flex items-center justify-center w-8 h-8 bg-accent rounded-lg shadow-glow-blue-sm">
                 <Zap className="w-4 h-4 text-white" aria-hidden="true" />
               </div>
@@ -56,9 +56,9 @@ export default function Footer() {
             </p>
 
             <div className="space-y-3 text-sm text-white/40 mb-7">
-              <a href="mailto:team@accountech.com" className="flex items-center gap-2.5 hover:text-accent transition-colors group">
+              <a href="mailto:team@accountingskip.com" className="flex items-center gap-2.5 hover:text-accent transition-colors group">
                 <Mail className="w-4 h-4 text-accent/70 group-hover:text-accent transition-colors flex-shrink-0" aria-hidden="true" />
-                team@accountech.com
+                team@accountingskip.com
               </a>
               <a href="tel:+13055550123" className="flex items-center gap-2.5 hover:text-accent transition-colors group">
                 <Phone className="w-4 h-4 text-accent/70 group-hover:text-accent transition-colors flex-shrink-0" aria-hidden="true" />
@@ -82,7 +82,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-9 h-9 glass rounded-lg hover:border-accent/30 hover:bg-accent/10 transition-all duration-200"
-                  aria-label={`AccounTech on ${label}`}
+                  aria-label={`Accounting Skip on ${label}`}
                 >
                   <Icon className="w-4 h-4 text-white/50 hover:text-accent" aria-hidden="true" />
                 </a>
@@ -137,7 +137,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} AccounTech LLC. All rights reserved. Florida LLC.
+            © {new Date().getFullYear()} Accounting Skip LLC. All rights reserved. Florida LLC.
           </p>
           <div className="flex items-center gap-3 text-xs text-white/25">
             <span className="flex items-center gap-1.5">

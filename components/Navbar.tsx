@@ -31,13 +31,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
 
         {/* ── Logo ─────────────────────────────────────────── */}
-        <Link href="/" className="flex items-center gap-2 flex-shrink-0" aria-label="AccounTech home">
+        <Link href="/" className="flex items-center gap-2 flex-shrink-0" aria-label="Accounting Skip home">
           <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#4F6EF7]">
             <Zap className="w-4 h-4 text-white" aria-hidden="true" />
           </div>
           <span className="text-xl font-bold">
-            <span className="text-white">Accoun</span>
-            <span className="text-[#4F6EF7]">Tech</span>
+            <span className="text-white">Accounting</span>
+            <span className="text-[#4F6EF7]"> Skip</span>
           </span>
         </Link>
 

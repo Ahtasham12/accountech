@@ -7,9 +7,9 @@ import TrustBadgeBar from '@/components/TrustBadgeBar'
 export const metadata: Metadata = {
   title: 'Contact — Schedule a Free Consultation',
   description:
-    'Get in touch with AccounTech. Schedule a free 30-minute consultation. Email: team@accountech.com. Phone: (305) 555-0123. Mon–Fri 9AM–6PM EST.',
+    'Get in touch with Accounting Skip. Schedule a free 30-minute consultation. Email: team@accountingskip.com. Phone: (305) 555-0123. Mon–Fri 9AM–6PM EST.',
   openGraph: {
-    title: 'Contact AccounTech',
+    title: 'Contact Accounting Skip',
     description: 'Schedule a free bookkeeping consultation. We respond within 1 business day.',
   },
 }
@@ -18,8 +18,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'team@accountech.com',
-    href: 'mailto:team@accountech.com',
+    value: 'team@accountingskip.com',
+    href: 'mailto:team@accountingskip.com',
     color: '#4F8CFF',
   },
   {
@@ -39,7 +39,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Entity',
-    value: 'AccounTech LLC · Florida, USA',
+    value: 'Accounting Skip LLC · Florida, USA',
     href: null,
     color: '#8B5CF6',
   },
@@ -67,7 +67,7 @@ export default function ContactPage() {
             </h1>
             <p className="section-sub max-w-xl mx-auto">
               Schedule a free 30-minute consultation. We'll review your current setup and show you
-              exactly how AccounTech works — no commitment required.
+              exactly how Accounting Skip works — no commitment required.
             </p>
           </AnimateOnScroll>
         </div>

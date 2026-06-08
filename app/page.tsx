@@ -19,13 +19,13 @@ import TestimonialCarousel from '@/components/TestimonialCarousel'
 import CTABanner from '@/components/CTABanner'
 
 export const metadata: Metadata = {
-  title: 'AccounTech — AI-Powered Accounting Operations for US Businesses',
+  title: 'Accounting Skip — AI-Powered Accounting Operations for US Businesses',
   description:
     'AI-powered accounting operations platform. Transactions auto-categorized, receipts captured via WhatsApp & Gmail, bank reconciliation automated — books closed in 5 days. QBO certified. From $349/mo.',
   openGraph: {
-    title: 'AccounTech — AI-Powered Accounting Operations',
+    title: 'Accounting Skip — AI-Powered Accounting Operations',
     description: 'AI categorizes transactions, reads receipts, reconciles banks — books closed in 5 days. From $349/mo.',
-    url: 'https://accountech.com',
+    url: 'https://accountingskip.com',
   },
 }
 
@@ -450,7 +450,7 @@ export default function HomePage() {
                   <p className="text-sm font-semibold text-white/50">Accountant</p>
                 </div>
                 <div className="p-4 sm:p-5 text-center border-l border-white/[0.08] bg-accent/[0.06]">
-                  <p className="text-[10px] font-medium text-accent/60 uppercase tracking-widest mb-1">AccounTech</p>
+                  <p className="text-[10px] font-medium text-accent/60 uppercase tracking-widest mb-1">Accounting Skip</p>
                   <p className="text-sm font-semibold text-accent">AI + Human</p>
                 </div>
               </div>
@@ -520,7 +520,7 @@ export default function HomePage() {
                 Connects to your entire financial stack
               </h2>
               <p className="section-sub max-w-xl mx-auto">
-                AccounTech plugs into the tools you already use — no migration, no disruption,
+                Accounting Skip plugs into the tools you already use — no migration, no disruption,
                 no manual data entry.
               </p>
             </AnimateOnScroll>
@@ -641,7 +641,7 @@ export default function HomePage() {
       {/* ── Final CTA ────────────────────────────────────────── */}
       <CTABanner
         headline="Ready to close your books in 5 days?"
-        subtext="Schedule a free 30-minute consultation. No commitment. We'll review your current setup and show you exactly what AccounTech's AI operations platform delivers."
+        subtext="Schedule a free 30-minute consultation. No commitment. We'll review your current setup and show you exactly what Accounting Skip's AI operations platform delivers."
         primaryCTA="Schedule Free Consultation"
         primaryHref="/contact"
         secondaryCTA="View Pricing"

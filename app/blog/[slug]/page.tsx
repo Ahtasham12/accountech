@@ -109,7 +109,7 @@ The right approach is to reconcile each settlement report line by line, booking 
 
 ## Our reconciliation process
 
-For every AccounTech e-commerce client, here's what we do:
+For every Accounting Skip e-commerce client, here's what we do:
 
 1. Download the settlement detail report from Seller Central (or pull it via API)
 2. Map each line item to the appropriate QuickBooks account
@@ -170,7 +170,7 @@ The consequences of uncollected sales tax are getting more serious:
 3. Set up tax collection: Tools like TaxJar and Avalara automate this for e-commerce sellers.
 4. File regularly: Monthly, quarterly, or annually depending on the state and your volume.
 
-AccounTech clients on Growth and Scale plans get nexus monitoring included. We track your sales by state and flag when you're approaching or crossing thresholds.
+Accounting Skip clients on Growth and Scale plans get nexus monitoring included. We track your sales by state and flag when you're approaching or crossing thresholds.
     `,
   },
 }

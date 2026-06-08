@@ -5,7 +5,7 @@ import CTABanner from '@/components/CTABanner'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'AccounTech Privacy Policy — how we collect, use, and protect your personal and financial information.',
+  description: 'Accounting Skip Privacy Policy — how we collect, use, and protect your personal and financial information.',
 }
 
 const LAST_UPDATED = 'May 27, 2026'
@@ -14,7 +14,7 @@ const sections = [
   {
     id: 'overview',
     heading: 'Overview',
-    body: `AccounTech LLC ("AccounTech," "we," "our," or "us") is a Florida-based bookkeeping and accounting services company. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (accountech.com) or engage our bookkeeping services.
+    body: `Accounting Skip LLC ("Accounting Skip," "we," "our," or "us") is a Florida-based bookkeeping and accounting services company. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (accountingskip.com) or engage our bookkeeping services.
 
 We take your privacy seriously. Because we handle financial information on behalf of small businesses, we operate under strict confidentiality standards and apply security controls appropriate for sensitive financial data.
 
@@ -58,9 +58,9 @@ We share information only in the following limited circumstances:
 
 **Professional partners**: If you are referred to us by a CPA firm under our Partner Program, we may share relevant engagement details with your referring CPA as authorized by you.
 
-**Legal requirements**: We may disclose information if required by law, subpoena, court order, or to protect the rights, property, or safety of AccounTech, our clients, or others.
+**Legal requirements**: We may disclose information if required by law, subpoena, court order, or to protect the rights, property, or safety of Accounting Skip, our clients, or others.
 
-**Business transfer**: If AccounTech is acquired or merges, client data may transfer to the successor entity, which would be bound by this privacy policy.`,
+**Business transfer**: If Accounting Skip is acquired or merges, client data may transfer to the successor entity, which would be bound by this privacy policy.`,
   },
   {
     id: 'data-security',
@@ -109,7 +109,7 @@ You can control cookies through your browser settings. Disabling analytics cooki
 
 If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know, delete, and opt-out of the sale of personal information. We do not sell personal information.
 
-To exercise any of these rights, contact us at privacy@accountech.com.`,
+To exercise any of these rights, contact us at privacy@accountingskip.com.`,
   },
   {
     id: 'changes',
@@ -123,9 +123,9 @@ Continued use of our services after the effective date of any changes constitute
     heading: 'Contact Us',
     body: `If you have questions about this Privacy Policy or want to exercise your data rights, reach us at:
 
-AccounTech LLC
-Email: privacy@accountech.com
-General: team@accountech.com
+Accounting Skip LLC
+Email: privacy@accountingskip.com
+General: team@accountingskip.com
 Phone: (305) 555-0123`,
   },
 ]
@@ -241,7 +241,7 @@ export default function PrivacyPage() {
           </div>
 
           <p className="text-center text-white/30 text-xs mt-8">
-            &copy; {new Date().getFullYear()} AccounTech LLC. All rights reserved. &middot;{' '}
+            &copy; {new Date().getFullYear()} Accounting Skip LLC. All rights reserved. &middot;{' '}
             <Link href="/terms" className="hover:text-white/60 transition-colors">Terms of Service</Link>
             {' '}&middot;{' '}
             <Link href="/security" className="hover:text-white/60 transition-colors">Security</Link>

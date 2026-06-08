@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Specialized bookkeeping for Amazon sellers, Shopify stores, restaurants, and convenience stores/gas stations. Industry-specific expertise and reporting.',
   openGraph: {
-    title: 'AccounTech Industries — Specialized Bookkeeping',
+    title: 'Accounting Skip Industries — Specialized Bookkeeping',
     description: 'We specialize in the businesses we serve — not generic bookkeeping.',
   },
 }
@@ -261,7 +261,7 @@ export default function IndustriesPage() {
 
       <CTABanner
         headline="Your industry. Our expertise."
-        subtext="Tell us about your business and we'll show you exactly how AccounTech handles your specific bookkeeping challenges."
+        subtext="Tell us about your business and we'll show you exactly how Accounting Skip handles your specific bookkeeping challenges."
       />
     </>
   )

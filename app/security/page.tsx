@@ -5,7 +5,7 @@ import CTABanner from '@/components/CTABanner'
 
 export const metadata: Metadata = {
   title: 'Security',
-  description: 'How AccounTech protects your financial data — encryption, access controls, and security practices.',
+  description: 'How Accounting Skip protects your financial data — encryption, access controls, and security practices.',
 }
 
 const controls = [
@@ -161,11 +161,11 @@ export default function SecurityPage() {
             If you discover a security vulnerability on our website or in our systems, please report it to us before disclosing publicly. We will acknowledge receipt within 24 hours and keep you updated as we investigate.
           </p>
           <a
-            href="mailto:security@accountech.com"
+            href="mailto:security@accountingskip.com"
             className="btn-primary shadow-glow-blue"
           >
             <Shield className="w-4 h-4" aria-hidden="true" />
-            security@accountech.com
+            security@accountingskip.com
           </a>
           <p className="text-white/30 text-xs mt-6">
             We do not pursue legal action against researchers who follow responsible disclosure practices.

@@ -5,11 +5,11 @@ import TrustBadgeBar from '@/components/TrustBadgeBar'
 import CTABanner from '@/components/CTABanner'
 
 export const metadata: Metadata = {
-  title: 'About AccounTech — AI + Human Bookkeeping for US Small Businesses',
+  title: 'About Accounting Skip — AI + Human Bookkeeping for US Small Businesses',
   description:
-    'AccounTech was founded to bridge the gap between expensive US bookkeeping and unreliable offshore services. Florida LLC. QBO ProAdvisor Certified. AI-powered.',
+    'Accounting Skip was founded to bridge the gap between expensive US bookkeeping and unreliable offshore services. Florida LLC. QBO ProAdvisor Certified. AI-powered.',
   openGraph: {
-    title: 'About AccounTech',
+    title: 'About Accounting Skip',
     description: "We combine AI technology with certified accountants to deliver bookkeeping that's faster, more accurate, and more affordable.",
   },
 }
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <span className="text-gradient">accessible to every US small business</span>
             </h1>
             <p className="section-sub max-w-2xl mx-auto">
-              AccounTech was founded to bridge the gap between expensive US bookkeeping and unreliable offshore services.
+              Accounting Skip was founded to bridge the gap between expensive US bookkeeping and unreliable offshore services.
               The answer: AI for the repetitive work, certified accountants for the judgment calls.
             </p>
           </AnimateOnScroll>
@@ -111,7 +111,7 @@ export default function AboutPage() {
                     US tax knowledge. DIY leads to errors that cost more to fix than prevent.
                   </p>
                   <p>
-                    We built AccounTech to bridge this gap. By automating the repetitive parts of bookkeeping with AI
+                    We built Accounting Skip to bridge this gap. By automating the repetitive parts of bookkeeping with AI
                     (about 80% of all transactions), we deliver accurate, US-standard bookkeeping at a price that
                     actually makes sense for small businesses.
                   </p>
@@ -317,7 +317,7 @@ export default function AboutPage() {
 
       <CTABanner
         headline="Ready to experience the difference?"
-        subtext="Schedule a free consultation and see how AccounTech can transform your bookkeeping."
+        subtext="Schedule a free consultation and see how Accounting Skip can transform your bookkeeping."
       />
     </>
   )

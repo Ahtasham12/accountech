@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     'Practical bookkeeping tips, tax updates, e-commerce accounting guides, and AI automation insights for US small business owners.',
   openGraph: {
-    title: 'AccounTech Blog',
+    title: 'Accounting Skip Blog',
     description: 'Bookkeeping tips, tax updates, and e-commerce accounting for US small businesses.',
   },
 }
@@ -62,7 +62,7 @@ export default function BlogPage() {
           <AnimateOnScroll variant="fade-up">
             <div className="badge mb-4">
               <Zap className="w-3 h-3" aria-hidden="true" />
-              The AccounTech Blog
+              The Accounting Skip Blog
             </div>
             <h1 id="blog-heading" className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">
               Bookkeeping insights for{' '}

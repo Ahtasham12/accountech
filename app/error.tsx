@@ -13,7 +13,7 @@ export default function GlobalError({
 }) {
   useEffect(() => {
     // Log to your error tracking service here (e.g. Sentry)
-    console.error('[AccounTech Error]', error)
+    console.error('[Accounting Skip Error]', error)
   }, [error])
 
   return (
@@ -50,8 +50,8 @@ export default function GlobalError({
 
         <p className="mt-8 text-xs text-white/25">
           Still having trouble?{' '}
-          <a href="mailto:team@accountech.com" className="text-accent/60 hover:text-accent transition-colors">
-            team@accountech.com
+          <a href="mailto:team@accountingskip.com" className="text-accent/60 hover:text-accent transition-colors">
+            team@accountingskip.com
           </a>
         </p>
       </div>

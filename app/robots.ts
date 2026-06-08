@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
     ],
-    sitemap: 'https://accountech.com/sitemap.xml',
+    sitemap: 'https://accountingskip.com/sitemap.xml',
   }
 }

@@ -5,7 +5,7 @@ import CTABanner from '@/components/CTABanner'
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'AccounTech Terms of Service — the agreement governing our AI-powered bookkeeping services.',
+  description: 'Accounting Skip Terms of Service — the agreement governing our AI-powered bookkeeping services.',
 }
 
 const LAST_UPDATED = 'May 27, 2026'
@@ -14,16 +14,16 @@ const sections = [
   {
     id: 'acceptance',
     heading: 'Acceptance of Terms',
-    body: `These Terms of Service ("Terms") constitute a legally binding agreement between you (the client, "you," or "your") and AccounTech LLC, a Florida limited liability company ("AccounTech," "we," "our," or "us").
+    body: `These Terms of Service ("Terms") constitute a legally binding agreement between you (the client, "you," or "your") and Accounting Skip LLC, a Florida limited liability company ("Accounting Skip," "we," "our," or "us").
 
-By signing a Service Agreement, accessing our portal, or using any AccounTech service, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.
+By signing a Service Agreement, accessing our portal, or using any Accounting Skip service, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.
 
 If you are entering into these Terms on behalf of a company or other legal entity, you represent that you have the authority to bind that entity to these Terms.`,
   },
   {
     id: 'services',
     heading: 'Services Provided',
-    body: `AccounTech provides cloud-based bookkeeping, accounting, and financial reporting services as described in your selected plan (Starter, Growth, or Scale). Services may include:
+    body: `Accounting Skip provides cloud-based bookkeeping, accounting, and financial reporting services as described in your selected plan (Starter, Growth, or Scale). Services may include:
 
 - Monthly transaction categorization and coding
 - Bank and credit card reconciliation
@@ -36,7 +36,7 @@ If you are entering into these Terms on behalf of a company or other legal entit
 
 The specific scope of services is defined in your signed Service Agreement or plan selection. Services described on our website are for general informational purposes and do not constitute a guarantee of scope unless confirmed in writing.
 
-**Limitations**: AccounTech provides bookkeeping and accounting services, not tax preparation, legal advice, or financial planning. We are not a CPA firm. For tax filing, audit representation, or legal matters, we will refer you to qualified professionals.`,
+**Limitations**: Accounting Skip provides bookkeeping and accounting services, not tax preparation, legal advice, or financial planning. We are not a CPA firm. For tax filing, audit representation, or legal matters, we will refer you to qualified professionals.`,
   },
   {
     id: 'client-responsibilities',
@@ -46,11 +46,11 @@ The specific scope of services is defined in your signed Service Agreement or pl
 - Provide timely access to your bank feeds, financial accounts, and accounting software as required for your plan
 - Submit receipts, invoices, and supporting documents by the agreed monthly deadline (typically the 3rd business day of each month)
 - Respond to requests for clarification on unusual transactions within 5 business days
-- Notify AccounTech of any significant changes to your business (new bank accounts, new revenue streams, business structure changes) within 15 days
-- Maintain the accuracy of information you provide; AccounTech's output is dependent on the completeness and accuracy of data you supply
+- Notify Accounting Skip of any significant changes to your business (new bank accounts, new revenue streams, business structure changes) within 15 days
+- Maintain the accuracy of information you provide; Accounting Skip's output is dependent on the completeness and accuracy of data you supply
 - Keep your portal credentials confidential and notify us immediately of any unauthorized access
 
-AccounTech is not responsible for errors or delays caused by incomplete, inaccurate, or late submission of required information.`,
+Accounting Skip is not responsible for errors or delays caused by incomplete, inaccurate, or late submission of required information.`,
   },
   {
     id: 'payment',
@@ -72,40 +72,40 @@ AccounTech is not responsible for errors or delays caused by incomplete, inaccur
     heading: 'Term & Termination',
     body: `**Term**: These Terms begin on the date you sign your Service Agreement and continue month-to-month unless a fixed term is specified.
 
-**Cancellation by you**: You may cancel at any time with 30 days' written notice to team@accountech.com. Your final billing period will run through the end of the notice period.
+**Cancellation by you**: You may cancel at any time with 30 days' written notice to team@accountingskip.com. Your final billing period will run through the end of the notice period.
 
-**Termination by AccounTech**: We may terminate services immediately if you breach these Terms, fail to pay after 30 days' notice, or engage in conduct that is fraudulent, illegal, or abusive toward our team. We may terminate without cause with 60 days' written notice.
+**Termination by Accounting Skip**: We may terminate services immediately if you breach these Terms, fail to pay after 30 days' notice, or engage in conduct that is fraudulent, illegal, or abusive toward our team. We may terminate without cause with 60 days' written notice.
 
 **Effect of termination**: Upon termination, we will provide your financial records in a standard export format (PDF reports, QuickBooks export, or CSV) within 10 business days. We will revoke access to any third-party integrations authorized under your account.`,
   },
   {
     id: 'accuracy',
     heading: 'Accuracy & Limitation of Liability',
-    body: `AccounTech uses AI-assisted categorization verified by a QBO-certified accountant. We target a 99%+ accuracy rate. However, we cannot guarantee error-free bookkeeping in all cases, particularly when:
+    body: `Accounting Skip uses AI-assisted categorization verified by a QBO-certified accountant. We target a 99%+ accuracy rate. However, we cannot guarantee error-free bookkeeping in all cases, particularly when:
 
 - Source documents are incomplete, illegible, or not provided
 - Transactions require industry-specific judgment beyond the scope of standard bookkeeping
 - You or your other service providers have made changes to your accounts without notifying us
 
-**Limitation of liability**: To the fullest extent permitted by law, AccounTech's total liability for any claims arising from these Terms or your use of our services shall not exceed the total fees paid by you in the three months preceding the claim. We are not liable for indirect, incidental, consequential, or punitive damages.
+**Limitation of liability**: To the fullest extent permitted by law, Accounting Skip's total liability for any claims arising from these Terms or your use of our services shall not exceed the total fees paid by you in the three months preceding the claim. We are not liable for indirect, incidental, consequential, or punitive damages.
 
-AccounTech is not liable for financial decisions you make based on our reports, tax penalties arising from information you failed to provide, or losses resulting from system outages or force majeure events.`,
+Accounting Skip is not liable for financial decisions you make based on our reports, tax penalties arising from information you failed to provide, or losses resulting from system outages or force majeure events.`,
   },
   {
     id: 'confidentiality',
     heading: 'Confidentiality',
-    body: `Both parties agree to keep confidential all non-public information received from the other party in connection with the services. AccounTech will not disclose your financial records to any third party except as described in our Privacy Policy, required by law, or authorized by you in writing.
+    body: `Both parties agree to keep confidential all non-public information received from the other party in connection with the services. Accounting Skip will not disclose your financial records to any third party except as described in our Privacy Policy, required by law, or authorized by you in writing.
 
 This obligation survives termination of the service relationship for a period of 5 years.`,
   },
   {
     id: 'intellectual-property',
     heading: 'Intellectual Property',
-    body: `**Your data**: You retain ownership of all financial data, documents, and records you provide to AccounTech. We use this data solely to deliver services to you.
+    body: `**Your data**: You retain ownership of all financial data, documents, and records you provide to Accounting Skip. We use this data solely to deliver services to you.
 
 **Our work product**: Reports, analyses, and other deliverables we create for you are provided for your use. Upon full payment, you own these deliverables.
 
-**Our platform**: AccounTech's software, AI systems, methodologies, processes, and website are our proprietary intellectual property. You receive a limited, non-transferable license to use our client portal during the term of your engagement only.`,
+**Our platform**: Accounting Skip's software, AI systems, methodologies, processes, and website are our proprietary intellectual property. You receive a limited, non-transferable license to use our client portal during the term of your engagement only.`,
   },
   {
     id: 'governing-law',
@@ -119,7 +119,7 @@ You waive any right to participate in a class action lawsuit or class-wide arbit
     heading: 'Changes to Terms',
     body: `We may update these Terms periodically. We will notify you by email at least 30 days before material changes take effect. Minor changes (such as clarifications that do not affect your rights) may be posted without notice.
 
-Your continued use of AccounTech services after the effective date of any revision constitutes your acceptance of the updated Terms.
+Your continued use of Accounting Skip services after the effective date of any revision constitutes your acceptance of the updated Terms.
 
 If you do not agree to updated Terms, you may terminate your service with 30 days' written notice before the effective date.`,
   },
@@ -128,9 +128,9 @@ If you do not agree to updated Terms, you may terminate your service with 30 day
     heading: 'Contact',
     body: `For questions about these Terms, contact us at:
 
-AccounTech LLC
-Email: legal@accountech.com
-General: team@accountech.com
+Accounting Skip LLC
+Email: legal@accountingskip.com
+General: team@accountingskip.com
 Phone: (305) 555-0123`,
   },
 ]
@@ -160,7 +160,7 @@ export default function TermsPage() {
             Last updated: {LAST_UPDATED}
           </p>
           <p className="text-white/60 mt-4 text-lg leading-relaxed max-w-2xl">
-            Plain-language terms governing your use of AccounTech bookkeeping services. We have tried to write these in plain English — but they are still a legal agreement.
+            Plain-language terms governing your use of Accounting Skip bookkeeping services. We have tried to write these in plain English — but they are still a legal agreement.
           </p>
         </div>
       </section>
@@ -241,7 +241,7 @@ export default function TermsPage() {
           </div>
 
           <p className="text-center text-white/30 text-xs mt-8">
-            &copy; {new Date().getFullYear()} AccounTech LLC. All rights reserved. &middot;{' '}
+            &copy; {new Date().getFullYear()} Accounting Skip LLC. All rights reserved. &middot;{' '}
             <Link href="/privacy" className="hover:text-white/60 transition-colors">Privacy Policy</Link>
             {' '}&middot;{' '}
             <Link href="/security" className="hover:text-white/60 transition-colors">Security</Link>

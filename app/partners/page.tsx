@@ -9,9 +9,9 @@ import CTABanner from '@/components/CTABanner'
 export const metadata: Metadata = {
   title: 'For CPA Firms — White-Label Bookkeeping Partner Program',
   description:
-    'AccounTech partners with CPA firms as a white-label bookkeeping arm. Your brand, our AI-powered team. Starting at $300/client/month. Scale without hiring.',
+    'Accounting Skip partners with CPA firms as a white-label bookkeeping arm. Your brand, our AI-powered team. Starting at $300/client/month. Scale without hiring.',
   openGraph: {
-    title: 'AccounTech CPA Partner Program',
+    title: 'Accounting Skip CPA Partner Program',
     description: 'White-label bookkeeping for CPA firms. Your brand, our team, AI accuracy. Starting at $300/client.',
   },
 }
@@ -134,7 +134,7 @@ export default function PartnersPage() {
               <Link href="/contact" className="btn-primary !px-8 !py-4 shadow-glow-blue">
                 Schedule Partnership Call <ArrowRight className="w-5 h-5" aria-hidden="true" />
               </Link>
-              <a href="mailto:team@accountech.com" className="btn-ghost !px-8 !py-4">
+              <a href="mailto:team@accountingskip.com" className="btn-ghost !px-8 !py-4">
                 Email Us Directly
               </a>
             </div>
@@ -326,7 +326,7 @@ export default function PartnersPage() {
       </section>
 
       <CTABanner
-        headline="Partner with AccounTech"
+        headline="Partner with Accounting Skip"
         subtext="One partnership call is all it takes. We'll walk you through our process, answer your questions, and build a pilot plan together."
         primaryCTA="Schedule Partnership Call"
         primaryHref="/contact"

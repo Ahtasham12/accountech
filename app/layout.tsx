@@ -5,13 +5,13 @@ import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://accountech.com'),
+  metadataBase: new URL('https://accountingskip.com'),
   title: {
-    default: 'AccounTech — AI-Powered Bookkeeping for US Small Businesses',
-    template: '%s | AccounTech',
+    default: 'Accounting Skip — AI-Powered Bookkeeping for US Small Businesses',
+    template: '%s | Accounting Skip',
   },
   description:
-    'AccounTech is a Florida-based AI-powered bookkeeping firm. Our AI categorizes 80% of transactions instantly. QBO-certified team. Month-end close in 5 days. Starting at $349/month.',
+    'Accounting Skip is a Florida-based AI-powered bookkeeping firm. Our AI categorizes 80% of transactions instantly. QBO-certified team. Month-end close in 5 days. Starting at $349/month.',
   keywords: [
     'AI bookkeeping',
     'online bookkeeping service',
@@ -24,15 +24,15 @@ export const metadata: Metadata = {
     'BPO bookkeeping',
     'Florida bookkeeping',
   ],
-  authors: [{ name: 'AccounTech LLC' }],
-  creator: 'AccounTech LLC',
-  publisher: 'AccounTech LLC',
+  authors: [{ name: 'Accounting Skip LLC' }],
+  creator: 'Accounting Skip LLC',
+  publisher: 'Accounting Skip LLC',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://accountech.com',
-    siteName: 'AccounTech',
-    title: 'AccounTech — AI-Powered Bookkeeping for US Small Businesses',
+    url: 'https://accountingskip.com',
+    siteName: 'Accounting Skip',
+    title: 'Accounting Skip — AI-Powered Bookkeeping for US Small Businesses',
     description:
       'Month-end close in 5 days. AI categorizes 80% of transactions. QBO-certified review. Starting at $349/month.',
     images: [
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'AccounTech — AI-Powered Bookkeeping',
+        alt: 'Accounting Skip — AI-Powered Bookkeeping',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AccounTech — AI-Powered Bookkeeping',
+    title: 'Accounting Skip — AI-Powered Bookkeeping',
     description: 'Month-end close in 5 days. AI + QBO-certified accountants. Starting at $349/month.',
     images: ['/opengraph-image'],
   },
@@ -74,11 +74,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'AccountingService',
-              name: 'AccounTech LLC',
+              name: 'Accounting Skip LLC',
               description: 'AI-powered bookkeeping for US small businesses',
-              url: 'https://accountech.com',
+              url: 'https://accountingskip.com',
               telephone: '+1-305-555-0123',
-              email: 'team@accountech.com',
+              email: 'team@accountingskip.com',
               address: {
                 '@type': 'PostalAddress',
                 addressRegion: 'FL',

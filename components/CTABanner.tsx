@@ -12,7 +12,7 @@ interface CTABannerProps {
 
 export default function CTABanner({
   headline = 'Ready to close your books in 5 days?',
-  subtext = 'Join hundreds of US small businesses who trust AccounTech for accurate, AI-powered bookkeeping. No setup fees. Cancel anytime.',
+  subtext = 'Join hundreds of US small businesses who trust Accounting Skip for accurate, AI-powered bookkeeping. No setup fees. Cancel anytime.',
   primaryCTA = 'Schedule Free Consultation',
   primaryHref = '/contact',
   secondaryCTA = 'View Pricing',

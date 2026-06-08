@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
 
     // ── Dev / staging: log only ─────────────────────────────────────
     if (!apiKey) {
-      console.log('[AccounTech Contact] No RESEND_API_KEY — logging submission:')
+      console.log('[Accounting Skip Contact] No RESEND_API_KEY — logging submission:')
       console.log(JSON.stringify(body, null, 2))
       // Still return success so the UI works during development
       return NextResponse.json({ ok: true })
@@ -41,8 +41,8 @@ export async function POST(req: NextRequest) {
         Authorization:  `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        from:    'AccounTech Website <no-reply@accountech.com>',
-        to:      ['team@accountech.com'],
+        from:    'Accounting Skip Website <no-reply@accountingskip.com>',
+        to:      ['team@accountingskip.com'],
         replyTo: body.email,
         subject: `New consultation request — ${body.name} (${body.service})`,
         html: `
@@ -61,14 +61,14 @@ export async function POST(req: NextRequest) {
 
     if (!res.ok) {
       const err = await res.text()
-      console.error('[AccounTech Contact] Resend error:', err)
+      console.error('[Accounting Skip Contact] Resend error:', err)
       return NextResponse.json({ error: 'Failed to send message. Please email us directly.' }, { status: 502 })
     }
 
     return NextResponse.json({ ok: true })
 
   } catch (err) {
-    console.error('[AccounTech Contact] Unexpected error:', err)
+    console.error('[Accounting Skip Contact] Unexpected error:', err)
     return NextResponse.json({ error: 'Unexpected error. Please try again.' }, { status: 500 })
   }
 }

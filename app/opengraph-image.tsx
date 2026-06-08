@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 
-export const alt         = 'AccounTech — AI-Powered Bookkeeping for US Small Businesses'
+export const alt         = 'Accounting Skip — AI-Powered Bookkeeping for US Small Businesses'
 export const size        = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -72,8 +72,8 @@ export default function OgImage() {
               <div style={{ display: 'flex', color: 'white', fontSize: 28, fontWeight: 700 }}>⚡</div>
             </div>
             <div style={{ display: 'flex', color: 'white', fontSize: 38, fontWeight: 700, letterSpacing: -1 }}>
-              Accoun
-              <span style={{ color: '#4F6EF7' }}>Tech</span>
+              Accounting
+              <span style={{ color: '#4F6EF7' }}> Skip</span>
             </div>
           </div>
 

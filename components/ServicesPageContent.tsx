@@ -278,7 +278,7 @@ export default function ServicesPageContent() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-white/60 text-lg leading-relaxed mb-8 max-w-lg">
-                AccounTech's AI engine categorizes transactions in real-time, chases missing documents, and delivers month-end reports — no manual data entry, no delays.
+                Accounting Skip's AI engine categorizes transactions in real-time, chases missing documents, and delivers month-end reports — no manual data entry, no delays.
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
@@ -446,7 +446,7 @@ export default function ServicesPageContent() {
             badge="The Difference"
             icon={TrendingUp}
             heading={<>AI Bookkeeping vs. <span className="text-white/30">Traditional</span></>}
-            sub="See exactly what changes when you switch to AccounTech."
+            sub="See exactly what changes when you switch to Accounting Skip."
           />
 
           <motion.div
@@ -472,7 +472,7 @@ export default function ServicesPageContent() {
                   style={{ background: 'linear-gradient(to right, transparent, rgba(79,140,255,0.8), transparent)' }}
                   aria-hidden="true"
                 />
-                <span className="text-[11px] font-bold text-accent uppercase tracking-wider">AccounTech AI ✦</span>
+                <span className="text-[11px] font-bold text-accent uppercase tracking-wider">Accounting Skip AI ✦</span>
               </div>
             </div>
 
