@@ -56,11 +56,11 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={[
-                  'whitespace-nowrap text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200',
+                  'whitespace-nowrap text-[15px] font-semibold px-4 py-2 rounded-lg transition-all duration-200 tracking-wide',
                   'hover:text-white hover:bg-white/[0.08] hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(79,110,247,0.15)]',
                   isActive
                     ? 'text-white bg-white/10'
-                    : 'text-gray-400',
+                    : 'text-gray-300',
                 ].join(' ')}
               >
                 {link.label}
@@ -73,7 +73,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-4">
           <Link
             href="/contact"
-            className="whitespace-nowrap text-sm font-medium text-gray-400 px-4 py-2 rounded-lg hover:text-white hover:bg-white/[0.08] hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(79,110,247,0.15)] transition-all duration-200"
+            className="whitespace-nowrap text-[15px] font-semibold text-gray-300 tracking-wide px-4 py-2 rounded-lg hover:text-white hover:bg-white/[0.08] hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(79,110,247,0.15)] transition-all duration-200"
           >
             Contact
           </Link>
